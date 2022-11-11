@@ -1,0 +1,3 @@
+[submodule "Source/Lib1"]
+	path = Source/Lib1
+	url = //SERVER1/share/PROCESS/Training/SoftwareQuizes/git/Lib1
