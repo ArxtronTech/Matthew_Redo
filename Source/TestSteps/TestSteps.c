@@ -3,16 +3,16 @@
 * \author Biye Chen
 * \copyright Arxtron Technologies Inc.. All Rights Reserved.
 * \date 11/10/2022 11:34:01 PM
-* \brief A short description.
+* \brief This contains all the test steps used for this project.
+* 
+* This project compiles into a DLL file and is meant to be used as a CVI module
+* 	within TestStand.
 * 
 * This Library was created using
 * * Template version 1.0.0
 * * ArxtronToolslib version 1.1.0
 * * DebugToolslib version 0.0.0
 * * GUIToolslib version 0.0.0
-* PLEASE ONLY UPDATE THE VERSION NUMBERS WHEN UPDATING THE TEMPLATE OR RELATED TOOLSLIB
-* THESE VERSION NUMBERS SHOULD BE SEPARATE FROM THE LIBRARY VERSION
-* THE ALL CAPS PORTION OF THIS COMMENT SECTION CAN BE REMOVED AFTER CREATING THE LIBRARY
 *******************************************************************************/
 
 //! \cond
@@ -50,7 +50,46 @@
 /***************************************************************************//*!
 * \brief 
 *******************************************************************************/
-int TestStep (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
+int TestStep_Step1 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
+{
+	TSInit;
+	
+	
+	
+Error:
+	return error;
+}
+
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+int TestStep_Step2 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
+{
+	TSInit;
+	
+	
+	
+Error:
+	return error;
+}
+
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+int TestStep_Step3 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
+{
+	TSInit;
+	
+	
+	
+Error:
+	return error;
+}
+
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+int TestStep_Step4 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
 	
