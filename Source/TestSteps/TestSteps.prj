@@ -10,7 +10,7 @@ IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
 VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
 IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
 VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
-Number of Files = 6
+Number of Files = 8
 Target Type = "Dynamic Link Library"
 Flags = 16
 Copied From Locked InstrDrv Directory = False
@@ -46,6 +46,20 @@ File Type = "CSource"
 Res Id = 2
 Path Is Rel = True
 Path Rel To = "Project"
+Path Rel Path = "main.c"
+Path Line0001 = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/TestSteps/ma"
+Path Line0002 = "in.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 0
+
+[File 0003]
+File Type = "CSource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
 Path Rel Path = "TestSteps.c"
 Path Line0001 = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/TestSteps/Te"
 Path Line0002 = "stSteps.c"
@@ -55,25 +69,14 @@ Project Flags = 0
 Folder = "Source Files"
 Folder Id = 0
 
-[File 0003]
-File Type = "Include"
-Res Id = 3
-Path Is Rel = True
-Path Rel To = "Project"
-Path Rel Path = "../Lib1/Lib1.h"
-Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib1/Lib1.h"
-Exclude = False
-Project Flags = 0
-Folder = "Include Files"
-Folder Id = 1
-
 [File 0004]
 File Type = "Include"
 Res Id = 4
 Path Is Rel = True
 Path Rel To = "Project"
-Path Rel Path = "../Lib2/Lib2.h"
-Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib2/Lib2.h"
+Path Rel Path = "ArxtronToolslib.h"
+Path Line0001 = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/TestSteps/Ar"
+Path Line0002 = "xtronToolslib.h"
 Exclude = False
 Project Flags = 0
 Folder = "Include Files"
@@ -84,8 +87,8 @@ File Type = "Include"
 Res Id = 5
 Path Is Rel = True
 Path Rel To = "Project"
-Path Rel Path = "../Lib3/Lib3.h"
-Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib3/Lib3.h"
+Path Rel Path = "../Lib1/Lib1.h"
+Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib1/Lib1.h"
 Exclude = False
 Project Flags = 0
 Folder = "Include Files"
@@ -94,6 +97,30 @@ Folder Id = 1
 [File 0006]
 File Type = "Include"
 Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Lib2/Lib2.h"
+Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib2/Lib2.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0007]
+File Type = "Include"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../Lib3/Lib3.h"
+Path = "/c/Users/biye_chen/Desktop/Projects/SkillEvaluation/Quiz/git/Source/Lib3/Lib3.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 1
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
 Path Is Rel = True
 Path Rel To = "Project"
 Path Rel Path = "TestSteps.h"
@@ -137,7 +164,7 @@ Stack Size = 250000
 Stack Reserve = 1048576
 Stack Commit = 4096
 Image Base Address = 268435456
-Image Base Address x64 = 4194304
+Image Base Address x64 = 268435456
 Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
 Sign = False
 Sign Store = ""
@@ -231,7 +258,7 @@ Stack Size = 250000
 Stack Reserve = 1048576
 Stack Commit = 4096
 Image Base Address = 268435456
-Image Base Address x64 = 4194304
+Image Base Address x64 = 268435456
 Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
 Sign = False
 Sign Store = ""
@@ -299,7 +326,7 @@ Stack Size = 250000
 Stack Reserve = 1048576
 Stack Commit = 4096
 Image Base Address = 268435456
-Image Base Address x64 = 4194304
+Image Base Address x64 = 268435456
 Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
 Sign = False
 Sign Store = ""
@@ -367,7 +394,7 @@ Stack Size = 250000
 Stack Reserve = 1048576
 Stack Commit = 4096
 Image Base Address = 268435456
-Image Base Address x64 = 4194304
+Image Base Address x64 = 268435456
 Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
 Sign = False
 Sign Store = ""
@@ -422,7 +449,7 @@ Prefix Header File = ""
 Stack Size = 250000
 Stack Commit = 4096
 Image Base Address = 268435456
-Image Base Address x64 = 4194304
+Image Base Address x64 = 268435456
 
 [Compiler Defines]
 Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
@@ -492,12 +519,6 @@ Include File = ""
 IDL File Is Rel = False
 IDL File = ""
 Register ActiveX Server = False
-
-[Debug Post-build Actions]
-Build Action1 = "copy \"%CVITARGETPATH%\"  \"..\\..\\DLLs\\\""
-
-[Release Post-build Actions]
-Build Action1 = "copy \"%CVITARGETPATH%\"  \"..\\..\\DLLs\\\""
 
 [Signing Info]
 Sign = False

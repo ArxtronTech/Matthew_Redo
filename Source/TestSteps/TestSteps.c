@@ -22,6 +22,7 @@
 // Include files
 
 #include "TestSteps.h"
+#include "Lib1.h"
 
 //==============================================================================
 // Constants
@@ -32,6 +33,9 @@
 //==============================================================================
 // Static global variables
 
+static LogStruct logContent;
+static short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
+
 //==============================================================================
 // Static functions
 
@@ -41,11 +45,23 @@
 //==============================================================================
 // Global functions
 
+void settesttimer (void);
+void stoptesttimer (double *timeelapsed);
+
 //! \cond
 /// REGION END
 
 /// REGION START Code Body
 //! \endcond
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+void ParseLogs (char *LogPath, LogStruct *ParsedResults)
+{
+	FILE* fp = fopen (LogPath, "r");
+	
+	
+}
 
 /***************************************************************************//*!
 * \brief 
@@ -54,7 +70,7 @@ int TestStep_Step1 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
 	
-	
+	settesttimer();
 	
 Error:
 	return error;
@@ -80,7 +96,7 @@ int TestStep_Step3 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
 	
-	
+	ParseLogs ("TestLog.log", &logContent);
 	
 Error:
 	return error;
@@ -93,10 +109,32 @@ int TestStep_Step4 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
 	
-	
+	double TIME;
+	stoptesttimer(&TIME);
 	
 Error:
 	return error;
+}
+
+void TestStep_Step5 (void)
+{
+	glbMessageArray;
+}
+
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+void settesttimer (void)
+{
+	TestTimer = Timer();
+}
+
+/***************************************************************************//*!
+* \brief 
+*******************************************************************************/
+void stoptesttimer (double *timeelapsed)
+{
+	*timeelapsed = Timer()-TestTimer;
 }
 //! \cond
 /// REGION END
