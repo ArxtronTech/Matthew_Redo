@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<SerialHW>
+<Serial>
+<DeviceName>Printer</DeviceName>
+<Comport>COM1</Comport>
+<BaudRate>9600</BaudRate>
+<Parity>None</Parity>
+<DataBits>8</DataBits>
+<StopBits>1</StopBits>
+<CTSMode>On</CTSMode>
+<XonXoff>Off</XonXoff>
+<Timeout>1</Timeout>
+</Serial>
+</SerialHW>
+

@@ -1,0 +1,45 @@
+# This a workflow to update all submodules within the repository
+
+name: Submodule Update Action
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push to the master branch
+  push:
+    branches:
+      - master
+      - develop
+    
+  repository_dispatch:
+
+  # Allows the ability to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains the "build" job
+  build:
+    # The type of runner that the job will run on, can specify windows, ubuntu versions etc.
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup git config
+        run: |
+          git config --global user.name GitHub Action
+          git config --global user.email action@github.com
+      - name: SSH key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_CRC_PRIVATE_KEY }}
+      - name: Update CRC_LIB submodule
+        run: |
+          git submodule update --init -- CRC_LIB
+      - name: Push updates
+        run: |
+          git add .
+          git status
+          git commit --allow-empty -m "Build triggered. Updated Submodules"
+          git push

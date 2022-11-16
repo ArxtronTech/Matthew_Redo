@@ -1,0 +1,4 @@
+[submodule "CRC_LIB"]
+	path = CRC_LIB
+	url = git@github.com:ArxtronTech/CRC_LIB.git
+	branch = master

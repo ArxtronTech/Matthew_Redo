@@ -1,0 +1,7 @@
+*.cws
+*cvibuild*
+*msvc*
+*~*
+log*
+archive*
+*.bak
