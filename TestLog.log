@@ -1,0 +1,6 @@
+TestName,TestNum,TestVal,TestLoLim,TestHiLim
+Test1,1,500,400,600
+SomeTest,2,2,6,8
+InitHardware,3,OK,,
+ConnectDUT,4,OK,,
+ProgramDUT,5,NG,,

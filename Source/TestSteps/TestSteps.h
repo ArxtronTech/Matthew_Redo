@@ -15,10 +15,14 @@
 //==============================================================================
 // Include files
 
+#include "Lib1.h"
 #include "tsutil.h"
 #include <ansi_c.h>
+#include "Lib2.h"
 #include <utility.h>
+#include "Lib3.h"
 #include "cvidef.h"
+
 #include "ArxtronToolslib.h"
 
 //==============================================================================
@@ -27,13 +31,26 @@
 //==============================================================================
 // Types
 
+typedef struct {
+	char TestName[256];
+	int TestNum;
+	char TestVal[256];
+	char TestLoLim[256];
+	char TestHiLim[256];
+} LogStruct;
+
 //==============================================================================
 // External variables
+
+double TestTimer;
 
 //==============================================================================
 // Global functions
 
-int TestStep (int NestNum, char *ReportText, tsErrorDataType *ErrInfo);
+int TestStep_Step1 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo);
+int TestStep_Step2 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo);
+int TestStep_Step3 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo);
+int TestStep_Step4 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo);
 
 #ifdef __cplusplus
     }
