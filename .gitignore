@@ -1,0 +1,8 @@
+#Create ignore File for all log files,cws files, cvibuild and msvc
+
+.*cws
+*cvibuild*
+*msvc*
+*Log*
+*.bak
+*.log
