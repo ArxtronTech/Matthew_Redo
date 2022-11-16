@@ -33,7 +33,7 @@
 //==============================================================================
 // Static global variables
 
-static LogStruct glbLogContent;
+static LogStruct logContent;
 static short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
 
 //==============================================================================
@@ -41,7 +41,7 @@ static short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
 
 //==============================================================================
 // Global variables
-extern double glbTestTimer;
+
 //==============================================================================
 // Global functions
 
@@ -96,7 +96,7 @@ int TestStep_Step3 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
 	
-	ParseLogs ("TestLog.log", &glbLogContent);
+	ParseLogs ("TestLog.log", &logContent);
 	
 Error:
 	return error;
@@ -126,7 +126,7 @@ void TestStep_Step5 (void)
 *******************************************************************************/
 void settesttimer (void)
 {
-	glbTestTimer = Timer();
+	TestTimer = Timer();
 }
 
 /***************************************************************************//*!
@@ -134,7 +134,7 @@ void settesttimer (void)
 *******************************************************************************/
 void stoptesttimer (double *timeelapsed)
 {
-	*timeelapsed = Timer()-glbTestTimer;
+	*timeelapsed = Timer()-TestTimer;
 }
 //! \cond
 /// REGION END

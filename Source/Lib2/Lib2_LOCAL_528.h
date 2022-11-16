@@ -2,8 +2,7 @@
 	This library adds Analog IO control functions
 */
 
-
-//int AIOHandle=0;
+int AIOHandle=0;
 
 // Initializes the library to connect to the hardware based on the specified configuration file
 int Initialize_AIO_Lib (const char * const ConfigPath);

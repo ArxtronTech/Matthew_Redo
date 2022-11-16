@@ -1,3 +1,6 @@
 [submodule "Source/Lib1"]
 	path = Source/Lib1
 	url = //SERVER1/share/PROCESS/Training/SoftwareQuizes/git/Lib1
+[submodule "Source/Source/Serial_LIB"]
+	path = Source/Source/Serial_LIB
+	url = git@github.com:ArxtronTech/Serial_LIB.git
