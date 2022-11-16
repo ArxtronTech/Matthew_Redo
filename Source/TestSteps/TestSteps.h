@@ -5,8 +5,8 @@
 * \date 11/10/2022 11:34:01 PM
 *******************************************************************************/
 
-#ifndef __TestSteps_H__
-#define __TestSteps_H__
+#ifndef __TESTSTEPS_H__
+#define __TESTSTEPS_H__
 
 #ifdef __cplusplus
     extern "C" {
@@ -31,13 +31,6 @@
 //==============================================================================
 // Types
 
-typedef struct {
-	char TestName[256];
-	int TestNum;
-	char TestVal[256];
-	char TestLoLim[256];
-	char TestHiLim[256];
-} LogStruct;
 
 //==============================================================================
 // External variables

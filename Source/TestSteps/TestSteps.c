@@ -23,6 +23,8 @@
 
 #include "TestSteps.h"
 #include "Lib1.h"
+#include "StructureDefine.h"
+#include "NonTestStepFuc.h"
 
 //==============================================================================
 // Constants
@@ -41,7 +43,7 @@ static short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
 
 //==============================================================================
 // Global variables
-extern double glbTestTimer;
+
 //==============================================================================
 // Global functions
 
@@ -53,14 +55,7 @@ void stoptesttimer (double *timeelapsed);
 
 /// REGION START Code Body
 //! \endcond
-/***************************************************************************//*!
-* \brief 
-*******************************************************************************/
-void ParseLogs (char *LogPath, LogStruct *ParsedResults)
-{
-	FILE* fp = fopen (LogPath, "r");
-	
-}
+
 
 /***************************************************************************//*!
 * \brief 
@@ -121,21 +116,6 @@ void TestStep_Step5 (void)
 	glbMessageArray;
 }
 
-/***************************************************************************//*!
-* \brief 
-*******************************************************************************/
-void settesttimer (void)
-{
-	glbTestTimer = Timer();
-}
-
-/***************************************************************************//*!
-* \brief 
-*******************************************************************************/
-void stoptesttimer (double *timeelapsed)
-{
-	*timeelapsed = Timer()-glbTestTimer;
-}
 //! \cond
 /// REGION END
 //! \endcond
