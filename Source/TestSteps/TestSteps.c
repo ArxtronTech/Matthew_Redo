@@ -36,7 +36,8 @@
 // Static global variables
 
 static LogStruct glbLogContent;
-static short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
+extern short glbMessageArray[6];
+extern double glbTestTimer; 
 
 //==============================================================================
 // Static functions

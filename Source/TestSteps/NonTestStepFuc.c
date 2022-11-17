@@ -1,10 +1,11 @@
 #include <ansi_c.h>
 #include <utility.h>
-#include "StructureDefine.h"
 #include "NonTestStepFuc.h"
 #include "ArxtronToolslib.h"
 
 // Global variables
+short glbMessageArray[6] = {25928,27756,8303,28503,27762,8548};
+glbTr[2] = {1,2};
 static double glbTestTimer; //why I can't use extern here
 char errmsg[1024];
 /***************************************************************************//*!
@@ -50,4 +51,15 @@ void settesttimer (void)
 void stoptesttimer (double *timeelapsed)
 {
 	*timeelapsed = Timer()-glbTestTimer;
+}
+
+void ConvertIntToString(char *arr)
+{
+	memcpy (arr, &glbMessageArray, sizeof(glbMessageArray));
+	printf("%f",glbTestTimer);
+	//union {
+	//	char msg[16];
+	//	short num[8];
+	//} test;
+	//memcpy (&test.num, glbMessageArray, sizeof(glbMessageArray));
 }
