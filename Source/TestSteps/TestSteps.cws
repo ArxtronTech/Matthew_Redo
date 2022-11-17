@@ -61,9 +61,9 @@ Path = "/c/matthew/Redo/Quiz/Source/TestSteps/TestSteps.c"
 File Type = "CSource"
 Disk Date = 3751484787
 In Projects = "1,"
-Source Window State = "1,113,113,113,17,17,17,0,0,0,0,0,0,0,0,0,33,0,113,17,400,600,1,0,"
+Source Window State = "1,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,22,0,26,0,400,600,1,0,"
 Window Top = 31
-Window Z-Order = 1
+Window Z-Order = 2
 
 [File 0003]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.c"
@@ -73,18 +73,9 @@ In Projects = "1,"
 Source Window State = "1,7,7,7,6,6,6,0,0,0,0,0,0,0,0,0,0,0,7,6,401,728,1,0,"
 Window Top = 64
 Window Left = 26
-Window Z-Order = 2
+Window Z-Order = 3
 
 [File 0004]
-Path = "/c/matthew/Redo/Quiz/Source/TestSteps/dllmain.c"
-File Type = "CSource"
-Disk Date = 3751479866
-In Projects = "1,"
-Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,630,1,0,"
-Window Top = 83
-Window Left = 34
-
-[File 0005]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/ArxtronToolslib.h"
 File Type = "Include"
 Disk Date = 3751479866
@@ -92,28 +83,19 @@ In Projects = "1,"
 Source Window State = "1,50,50,50,12,18,12,0,3,0,0,0,0,0,0,0,28,0,50,18,341,728,1,0,"
 Window Top = 95
 Window Left = 42
-Window Z-Order = 3
+Window Z-Order = 4
 
-[File 0006]
-Path = "/c/matthew/Redo/Quiz/Source/Lib1/Lib1.h"
-File Type = "Include"
-Disk Date = 3751479099
-In Projects = "1,"
-Source Window State = "1,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,2,401,630,1,0,"
-Window Top = 219
-Window Left = 106
-
-[File 0007]
+[File 0005]
 Path = "/c/matthew/Redo/Quiz/Source/Lib2/Lib2.h"
 File Type = "Include"
-Disk Date = 3751481799
+Disk Date = 3751565278
 In Projects = "1,"
-Source Window State = "1,14,14,14,4,4,4,0,0,0,0,0,0,0,0,0,0,0,14,4,401,728,1,0,"
+Source Window State = "1,18,18,18,6,6,6,0,0,0,0,0,0,0,0,0,0,0,18,6,401,728,1,0,"
 Window Top = 95
 Window Left = 42
-Window Z-Order = 5
+Window Z-Order = 1
 
-[File 0008]
+[File 0006]
 Path = "/c/matthew/Redo/Quiz/Source/Lib3/Lib3.h"
 File Type = "Include"
 Disk Date = 3751479866
@@ -123,7 +105,7 @@ Window Top = 312
 Window Left = 154
 Window Z-Order = 6
 
-[File 0009]
+[File 0007]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.h"
 File Type = "Include"
 Disk Date = 3751564952
@@ -131,7 +113,25 @@ In Projects = "1,"
 Source Window State = "1,6,6,6,3,3,3,0,0,0,0,0,0,0,0,0,0,0,6,3,341,728,1,0,"
 Window Top = 126
 Window Left = 58
-Window Z-Order = 4
+Window Z-Order = 5
+
+[File 0008]
+Path = "/c/matthew/Redo/Quiz/Source/TestSteps/dllmain.c"
+File Type = "CSource"
+Disk Date = 3751479866
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,630,1,0,"
+Window Top = 83
+Window Left = 34
+
+[File 0009]
+Path = "/c/matthew/Redo/Quiz/Source/Lib1/Lib1.h"
+File Type = "Include"
+Disk Date = 3751479099
+In Projects = "1,"
+Source Window State = "1,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,2,401,630,1,0,"
+Window Top = 219
+Window Left = 106
 
 [File 0010]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/StructureDefine.h"
