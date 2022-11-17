@@ -2,16 +2,17 @@
 #include <utility.h>
 #include "StructureDefine.h"
 #include "NonTestStepFuc.h"
+#include "ArxtronToolslib.h"
 
 // Global variables
 static double glbTestTimer; //why I can't use extern here
-
+char errmsg[1024];
 /***************************************************************************//*!
 * \brief 
 *******************************************************************************/
 int ParseLogs (char *LogPath, LogStruct *ParsedResults)
 {
-	TSInit;
+	fnInit;
 	FILE* fp = fopen (LogPath, "r");
 	tsErrChk(!fp,"File not open");
 	char buff[1024];

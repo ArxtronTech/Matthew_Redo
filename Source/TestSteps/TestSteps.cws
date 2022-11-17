@@ -30,7 +30,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 5
+Number of Opened Files = 6
 Window Confinement Region Enabled = True
 MainColumnWidth = 236
 FileDateColumnWidth = 70
@@ -61,19 +61,19 @@ Path = "/c/matthew/Redo/Quiz/Source/TestSteps/TestSteps.c"
 File Type = "CSource"
 Disk Date = 3751484787
 In Projects = "1,"
-Source Window State = "1,113,113,113,17,17,17,0,0,0,0,0,0,0,0,0,28,0,113,17,400,600,1,0,"
+Source Window State = "1,113,113,113,17,17,17,0,0,0,0,0,0,0,0,0,33,0,113,17,400,600,1,0,"
 Window Top = 31
-Window Z-Order = 5
+Window Z-Order = 1
 
 [File 0003]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.c"
 File Type = "CSource"
-Disk Date = 3751485355
+Disk Date = 3751565067
 In Projects = "1,"
-Source Window State = "1,27,27,27,43,43,43,0,0,0,0,0,0,0,0,0,0,0,27,43,401,728,1,0,"
+Source Window State = "1,7,7,7,6,6,6,0,0,0,0,0,0,0,0,0,0,0,7,6,401,728,1,0,"
 Window Top = 64
 Window Left = 26
-Window Z-Order = 1
+Window Z-Order = 2
 
 [File 0004]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/dllmain.c"
@@ -89,9 +89,10 @@ Path = "/c/matthew/Redo/Quiz/Source/TestSteps/ArxtronToolslib.h"
 File Type = "Include"
 Disk Date = 3751479866
 In Projects = "1,"
-Source Window State = "1,64,64,64,8,13,8,0,3,0,0,0,0,0,0,0,56,0,64,13,341,728,1,0,"
+Source Window State = "1,50,50,50,12,18,12,0,3,0,0,0,0,0,0,0,28,0,50,18,341,728,1,0,"
 Window Top = 95
 Window Left = 42
+Window Z-Order = 3
 
 [File 0006]
 Path = "/c/matthew/Redo/Quiz/Source/Lib1/Lib1.h"
@@ -110,7 +111,7 @@ In Projects = "1,"
 Source Window State = "1,14,14,14,4,4,4,0,0,0,0,0,0,0,0,0,0,0,14,4,401,728,1,0,"
 Window Top = 95
 Window Left = 42
-Window Z-Order = 3
+Window Z-Order = 5
 
 [File 0008]
 Path = "/c/matthew/Redo/Quiz/Source/Lib3/Lib3.h"
@@ -120,17 +121,17 @@ In Projects = "1,"
 Source Window State = "1,4,4,4,14,14,14,0,0,0,0,0,0,0,0,0,0,0,4,14,401,630,1,0,"
 Window Top = 312
 Window Left = 154
-Window Z-Order = 4
+Window Z-Order = 6
 
 [File 0009]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.h"
 File Type = "Include"
-Disk Date = 3751483060
+Disk Date = 3751564952
 In Projects = "1,"
-Source Window State = "1,9,9,9,6,6,6,0,0,0,0,0,0,0,0,0,0,0,9,6,341,728,1,0,"
+Source Window State = "1,6,6,6,3,3,3,0,0,0,0,0,0,0,0,0,0,0,6,3,341,728,1,0,"
 Window Top = 126
 Window Left = 58
-Window Z-Order = 2
+Window Z-Order = 4
 
 [File 0010]
 Path = "/c/matthew/Redo/Quiz/Source/TestSteps/StructureDefine.h"
@@ -156,6 +157,7 @@ Tab 0002 = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.c"
 Tab 0003 = "/c/matthew/Redo/Quiz/Source/Lib2/Lib2.h"
 Tab 0004 = "/c/matthew/Redo/Quiz/Source/Lib3/Lib3.h"
 Tab 0005 = "/c/matthew/Redo/Quiz/Source/TestSteps/NonTestStepFuc.h"
+Tab 0006 = "/c/matthew/Redo/Quiz/Source/TestSteps/ArxtronToolslib.h"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True
