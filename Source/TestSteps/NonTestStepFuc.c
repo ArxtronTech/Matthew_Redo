@@ -9,9 +9,14 @@ static double glbTestTimer; //why I can't use extern here
 /***************************************************************************//*!
 * \brief 
 *******************************************************************************/
-void ParseLogs (char *LogPath, LogStruct *ParsedResults)
+int ParseLogs (char *LogPath, LogStruct *ParsedResults)
 {
+	TSInit;
 	FILE* fp = fopen (LogPath, "r");
+	tsErrChk(!fp,"File not open");
+	
+Error:
+	return error;
 	
 }
 

@@ -64,6 +64,8 @@ void stoptesttimer (double *timeelapsed);
 int TestStep_Step1 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
+	tsErrChk(NestNum<0,"Num number is wrong");
+		
 	
 	settesttimer();
 	
@@ -77,6 +79,7 @@ Error:
 int TestStep_Step2 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
+	tsErrChk(NestNum<0,"Num number is wrong");
 	
 	
 	
@@ -90,7 +93,7 @@ Error:
 int TestStep_Step3 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
-	
+	tsErrChk(NestNum<0,"Num number is wrong");
 	ParseLogs ("TestLog.log", &glbLogContent);
 	
 Error:
@@ -103,7 +106,7 @@ Error:
 int TestStep_Step4 (int NestNum, char *ReportText, tsErrorDataType *ErrInfo)
 {
 	TSInit;
-	
+	tsErrChk(NestNum<0,"Num number is wrong");
 	double TIME;
 	stoptesttimer(&TIME);
 	
