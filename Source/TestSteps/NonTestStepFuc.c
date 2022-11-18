@@ -32,6 +32,7 @@ int ParseLogs (char *LogPath, LogStruct *ParsedResults)
 	}
 	
 Error:
+	fclose(fp);
 	return error;
 	
 }
